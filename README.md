@@ -125,4 +125,4 @@ Script also allows to substitute the defaulted names of CSS classes by your own,
   });
 ```
 ## LICENSE
-[MIT license](../blob/master/LICENSE)
+[MIT license](../master/LICENSE.md)
