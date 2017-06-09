@@ -12,7 +12,9 @@ Similar to the effect seen, for example, on Google Images search result.
 - works in all modern browsers and IE10+
 
 ## DEMOSTRATION
+
 > [Example 01](../master/examples/example01.html) - Bootstrap 4
+
 > [Example 02](../master/examples/example01.html) - Materialize
 
 ## HOW TO
