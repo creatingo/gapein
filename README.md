@@ -12,8 +12,8 @@ Similar to the effect seen, for example, on Google Images search result.
 - works in all modern browsers and IE10+
 
 ## DEMOSTRATION
-[Example 01](../blob/master/examples/example01.html) - Bootstrap 4
-[Example 02](../blob/master/examples/example01.html) - Materialize
+> [Example 01](../master/examples/example01.html) - Bootstrap 4
+> [Example 02](../master/examples/example01.html) - Materialize
 
 ## HOW TO
 1. Initially, we need a thumbnail grid. Doesn't matter if it is based on "float" or "flexbox".
