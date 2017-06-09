@@ -27,6 +27,7 @@ Similar to the effect seen, for example, on Google Images search result.
 2. It is necessary to follow some basic rules for proper functionality of the script. The usage of defaulted names of CSS classes is practical and it also allows to separate the functionality of the script from design.
 The following code uses the default options: 
 ``` html
+<!--  GAPEIN gallery No.1 START -->
 <!--  All gallery items, including flexible preview box, are inside the HTML element with random ID -->
 <div id="my_first_gallery" class="container-fluid">
    <div class="row gapein">
@@ -35,7 +36,7 @@ The following code uses the default options:
       <!--  By CSS class "gapein- data" it is marked the element, which contains the data source (data attributes) for preview/details -->
       <img class="col-6 col-md-4 col-lg-3 col-xl-2 gapein-item gapein-trigger gapein-data" src="gallery/crop/a-gal-01.jpg" data-src_img="gallery/full/a-xgal-01.jpg" data-title="Cat" data-description="photo manipulation"  data-href_livepreview="http://www.creatingo.com" />
       ...
-      <!--  Gallery item is defined by defaulted CSS class "gapein-item" -->
+      <!--  Gallery items -->
       ...          
 ```
 Data attributes can have various names **data-something**, but please bear in mind, that these names will be used in preview element as CSS classes. This allows to assign the value of data to atribute of corresponding element.
@@ -43,3 +44,33 @@ Data attributes can have various names **data-something**, but please bear in mi
 To load the picture in full size it is needed the attribute **data-src\_andsomething**.
 
 The attribute **data-href\_andsomething** is useful in case you like to direct the link to e.g., LIVEPREVIEW.
+
+Preview element is marked by CSS class "gapein-preview" and it contains:
+``` html
+      ...
+      <!--  Gallery items -->
+      ...
+      <!--  GAPEIN preview -->
+      <div class="gapein-preview" style="display: none; opacity: 0; transform: translateY(0px);">
+        <!--  Close button "gapein-close" class -->
+        <a href="#" class="gapein-close">X</a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="content col-12 col-xl-8">
+              <!-- Details element "gapein-detail" and also the name of the class corresponding to the data attribute -->
+              <img src="" class="img gapein-detail" />
+            </div>
+            <div class="content col-12 col-xl-4">
+              <!-- Details elements "gapein-detail" and also the name of the class corresponding to the data attribute -->
+              <h3 class="title gapein-detail"></h3>
+              <p class="description gapein-detail"></p>
+              <!-- "gapein-link" class is needed to run the default behavior by clicking on the link -->
+              <a href="#" class="livepreview gapein-detail gapein-link" target="_blank">LIVE PREVIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--  GAPEIN gallery No.1 END -->
+```
