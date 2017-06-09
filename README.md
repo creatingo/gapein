@@ -13,9 +13,9 @@ Similar to the effect seen, for example, on Google Images search result.
 
 ## DEMOSTRATION
 
-> [Example 01](../master/examples/example01.html) - Bootstrap 4
+> [Example 01](https://creatingo.github.io/gapein/example01.html) - Bootstrap 4
 
-> [Example 02](../master/examples/example01.html) - Materialize
+> [Example 02](https://creatingo.github.io/gapein/example02.html) - Materialize
 
 ## HOW TO
 1. Initially, we need a thumbnail grid. Doesn't matter if it is based on "float" or "flexbox".
