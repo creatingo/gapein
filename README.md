@@ -25,7 +25,7 @@ Similar to the effect seen, for example, on Google Images search result.
 </head>
 ```
 2. It is necessary to follow some basic rules for proper functionality of the script. The usage of defaulted names of CSS classes is practical and it also allows to separate the functionality of the script from design.
-⋅⋅⋅The following code uses the default options: 
+The following code uses the default options: 
 ``` html
 <!--  All gallery items, including flexible preview box, are inside the HTML element with random ID -->
 <div id="my_first_gallery" class="container-fluid">
@@ -38,6 +38,8 @@ Similar to the effect seen, for example, on Google Images search result.
       <!--  Gallery item is defined by defaulted CSS class "gapein-item" -->
       ...          
 ```
-Data attributes can have various names \"**data-**something\", but please bear in mind, that these names will be used in preview element as CSS classes. This allows to assign the value of data to atribute of corresponding element.
-To load the picture in full size it is needed the attribute \"**data-src\_**andsomething\".
-The attribute \"**data-href\_**andsomething\" is useful in case you like to direct the link to e.g., LIVEPREVIEW
+Data attributes can have various names **data-something**, but please bear in mind, that these names will be used in preview element as CSS classes. This allows to assign the value of data to atribute of corresponding element.
+
+To load the picture in full size it is needed the attribute **data-src\_andsomething**.
+
+The attribute **data-href\_andsomething** is useful in case you like to direct the link to e.g., LIVEPREVIEW.
