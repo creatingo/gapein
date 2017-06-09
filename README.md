@@ -11,6 +11,10 @@ Similar to the effect seen, for example, on Google Images search result.
 - unlimited amouth of details per item
 - works in all modern browsers and IE10+
 
+## DEMOSTRATION
+[Example 01](../blob/master/examples/example01.html) - Bootstrap 4
+[Example 02](../blob/master/examples/example01.html) - Materialize
+
 ## HOW TO
 1. Initially, we need a thumbnail grid. Doesn't matter if it is based on "float" or "flexbox".
    Include necessary CSS (less than 2kB).
@@ -74,13 +78,13 @@ Preview element is marked by CSS class "gapein-preview" and it contains:
 </div>
 <!--  GAPEIN gallery No.1 END -->
 ```
-3. At the end of HTML code enter the minimalized version of javascript file and short js code, which will initialise the Gapein gallery (we recommend to use the function "window.onload" or its suitable alternative)
+3. At the end of HTML code enter the minimalized version of javascript file and short code, which will initialise the Gapein gallery (we recommend to use the function "window.onload" or its suitable alternative)
 ``` html
-<!--  GAPEIN source file -->
+  <!--  GAPEIN source file -->
   <script src="js/gapein.min.js" type="text/javascript"></script>
 
   <script>
-    // Dokument ready vanilla js alternative
+    // Document ready vanilla js alternative
     var ready = function(fn) {
       if (typeof fn !== 'function') return;
       if (document.readyState === 'interactive' || document.readyState === 'complete') {
@@ -97,6 +101,28 @@ Preview element is marked by CSS class "gapein-preview" and it contains:
       gapein.init(gallery01);
 
     });
-
   </script>
 ```
+### OPTIONS
+Script also allows to substitute the defaulted names of CSS classes by your own, just don't forget for necessary styles.
+``` javascript
+  // Initialize GAPEIN with custom options
+  // Available defaults options
+  
+  var gallery = document.getElementById('my_second_gallery');
+  gapein.init(gallery, {
+    itemClass: 'gapein-item',
+    activeClass: 'gapein-active',
+    triggerClass: 'gapein-trigger',
+    dataClass: 'gapein-data',
+    dividerClass: 'gapein-divider',
+    dividerElem: 'div',
+    loadingClass: 'gapein-loading',
+    loadingHeight: '120',
+    previewClass: 'gapein-preview',
+    detailClass: 'gapein-detail',
+    closeClass: 'gapein-close'
+  });
+```
+## LICENSE
+[MIT license](../blob/master/LICENSE)
