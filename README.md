@@ -33,7 +33,7 @@ The following code uses the default options:
    <div class="row gapein">
       <!--  Gallery item is defined by defaulted CSS class "gapein-item" -->
       <!--  It can also act as "starter" after it is selected - CSS class "gapein-trigger" -->
-      <!--  By CSS class "gapein- data" it is marked the element, which contains the data source (data attributes) for preview/details -->
+      <!--  By CSS class "gapein-data" it is marked the element, which contains the data source (data attributes) for preview/details -->
       <img class="col-6 col-md-4 col-lg-3 col-xl-2 gapein-item gapein-trigger gapein-data" src="gallery/crop/a-gal-01.jpg" data-src_img="gallery/full/a-xgal-01.jpg" data-title="Cat" data-description="photo manipulation"  data-href_livepreview="http://www.creatingo.com" />
       ...
       <!--  Gallery items -->
@@ -73,4 +73,30 @@ Preview element is marked by CSS class "gapein-preview" and it contains:
   </div>
 </div>
 <!--  GAPEIN gallery No.1 END -->
+```
+3. At the end of HTML code enter the minimalized version of javascript file and short js code, which will initialise the Gapein gallery (we recommend to use the function "window.onload" or its suitable alternative)
+``` html
+<!--  GAPEIN source file -->
+  <script src="js/gapein.min.js" type="text/javascript"></script>
+
+  <script>
+    // Dokument ready vanilla js alternative
+    var ready = function(fn) {
+      if (typeof fn !== 'function') return;
+      if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        return fn();
+      }
+      document.addEventListener('DOMContentLoaded', fn, false);
+    };
+
+    // Run scripts when the document is ready as a callback
+    ready(function() {
+
+      // Initialize GAPEIN with default options
+      var gallery01 = document.getElementById('my_first_gallery');
+      gapein.init(gallery01);
+
+    });
+
+  </script>
 ```
