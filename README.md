@@ -18,8 +18,7 @@ Similar to the effect seen, for example, on Google Images search result.
 > [Example 02](https://creatingo.github.io/gapein/example02.html) - Materialize
 
 ## HOW TO
-1. Initially, we need a thumbnail grid. Doesn't matter if it is based on "float" or "flexbox".
-   Include necessary CSS (less than 2kB).
+1. Initially, we need a thumbnail grid. Doesn't matter if it is based on "float" or "flexbox", including mandatory CSS (less than 2kB).
 ``` html
 <head>
   ...
@@ -106,10 +105,10 @@ Preview element is marked by CSS class "gapein-preview" and it contains:
   </script>
 ```
 ### OPTIONS
-Script also allows to substitute the defaulted names of CSS classes by your own, just don't forget for necessary styles.
+Script also allows to substitute the defaulted names of CSS classes by your own, just don't forget mandatory styles.
 ``` javascript
   // Initialize GAPEIN with custom options
-  // Available defaults options
+  // Available default options
   
   var gallery = document.getElementById('my_second_gallery');
   gapein.init(gallery, {
