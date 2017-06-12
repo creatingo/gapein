@@ -53,6 +53,9 @@ ul {
 #my_first_gallery {
   padding: 1em;
 }
+#my_first_gallery img.gapein-item {
+  padding: 0;
+}
 
 #my_first_gallery .gapein-active {
   opacity: 0.5;
