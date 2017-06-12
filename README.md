@@ -35,7 +35,7 @@ The following code uses the default options:
 <!--  GAPEIN gallery No.1 START -->
 <!--  All gallery items, including flexible preview box, are inside the HTML element with random ID -->
 <div id="my_first_gallery" class="container-fluid">
-   <div class="row gapein">
+   <div class="row align-items-start gapein">
       <!--  Gallery item is defined by defaulted CSS class "gapein-item" -->
       <!--  It can also act as "starter" after it is selected - CSS class "gapein-trigger" -->
       <!--  By CSS class "gapein-data" it is marked the element, which contains the data source (data attributes) for preview/details -->
